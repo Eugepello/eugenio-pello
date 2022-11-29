@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Col, Row, Alert } from 'react-bootstrap';
 import { NewsletterTypes } from './types';
+import { useTranslation } from 'react-i18next';
 
 const Newsletter = ({ status, message, onValidated }: NewsletterTypes) => {
   const [email, setEmail] = useState<string>('');
+  const { t } = useTranslation();
 
   useEffect(() => {
     status === 'success' && clearFields();
@@ -28,9 +30,7 @@ const Newsletter = ({ status, message, onValidated }: NewsletterTypes) => {
         <Row>
           <Col lg={12} md={6} xl={5}>
             <h3>
-              Suscribite a mi Newsletter
-              <br />
-              para no perderte las últimas novedades
+              {t('newsletter.title')}
             </h3>
             {status === 'enviando' && <Alert>Enviando...</Alert>}
             {status === 'error' && <Alert variant='danger'>Error</Alert>}
@@ -45,7 +45,7 @@ const Newsletter = ({ status, message, onValidated }: NewsletterTypes) => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <button type='submit'>Enviar</button>
+                <button type='submit'>{t('contacto.send')}</button>
               </div>
             </form>
           </Col>

@@ -1,7 +1,10 @@
 import Carousel from 'react-multi-carousel';
+import { useTranslation } from 'react-i18next';
 import 'react-multi-carousel/lib/styles.css';
 
 const Habilidades = () => {
+  const { t } = useTranslation();
+
   const responsive = {
     largeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -27,8 +30,8 @@ const Habilidades = () => {
         <div className='row'>
           <div className='col-12'>
             <div className='skill-bx wow zoomIn'>
-              <h2>Tecnologías</h2>
-              <p>Lenguajes, frameworks, librerías y preprocesadores que utilizo con frecuencia</p>
+              <h2>{t('skills.title')}</h2>
+              <p>{t('skills.subtitle')}</p>
               <Carousel
                 className='owl-carousel owl-theme skill-slider'
                 infinite={true}

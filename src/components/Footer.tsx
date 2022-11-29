@@ -4,8 +4,11 @@ import Linkedin from '../assets/img/linkedin-in.svg';
 import Instagram from '../assets/img/instagram.svg';
 import Github from '../assets/img/github.svg';
 import MailchimpForm from './MailchimpForm';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <Container>
@@ -31,9 +34,7 @@ const Footer = () => {
               </a>
             </div>
             <p>
-              Desarrollado por Eugenio Pello.
-              <br />
-              Todos los derechos reservados.
+              {t('footer')}
             </p>
           </Col>
         </Row>

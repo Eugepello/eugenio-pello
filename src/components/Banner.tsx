@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Curriculum from './Curriculum';
 import 'animate.css';
+import { useTranslation } from 'react-i18next';
 
 const Banner = () => {
   const [loopNum, setLoopNum] = useState<number>(0);
@@ -9,7 +10,8 @@ const Banner = () => {
   const [text, setText] = useState<string>('');
   const [delta, setDelta] = useState<number>(300 - Math.random() * 100);
   const [index, setIndex] = useState<number>(1);
-  const toRotate = ['Desarrollador Web Front end.', 'Front end Developer.'];
+  const { t } = useTranslation();
+  const toRotate = [t('banner.rotation')];
   const period = 2000;
 
   useEffect(() => {
@@ -55,19 +57,17 @@ const Banner = () => {
         <Row className='aligh-items-center'>
           <Col md={12} xl={6} xs={12}>
             <div className='animate__animated animate__fadeIn'>
-              <span className='tagline'>¡Bienvenida/o a mi Website!</span>
+              <span className='tagline'>{t('banner.welcome')}</span>
               <h1>
-                {`Soy Eugenio Pello,`}{' '}
+                {t('banner.title')}{' '}
                 <span
                   className='txt-rotate'
-                  data-rotate='[ "Desarrollador Web Front end.", "Front end Developer." ]'
+                  data-rotate='[t("banner.rotation")]'
                 >
                   <span className='wrap'>{text}</span>
                 </span>
               </h1>
-              <p>
-                Tengo 24 años y me dedico a la programación desde hace un (1) año desarrollando aplicaciones web, principalmente a través de React con TypeScript. Mi objetivo a diario es profundizar estas tecnologías para mejorar la experiencia del usuario, ya sea a través del cliente como del servidor.
-              </p>
+              <p>{t('banner.presentation')}</p>
             </div>
           </Col>
           <Col md={12} xl={6} xs={12}>

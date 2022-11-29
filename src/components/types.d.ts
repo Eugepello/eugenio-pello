@@ -1,4 +1,5 @@
 import React from 'react';
+import { resources, defaultNS } from "./i18n";
 
 export interface FormTypes {
   firstName: string,
@@ -24,4 +25,11 @@ interface NewsletterTypes {
   status: string | null,
   message: React.ReactHTMLElement,
   onValidated: (formData: EmailFormFields) => void,
+}
+
+declare module "i18next" {
+  export interface CustomTypeOptions {
+    defaultNS: typeof defaultNS;
+    resources: typeof resources["en"];
+  }
 }

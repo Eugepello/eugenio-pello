@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'animate.css';
 import { FormTypes, StatusForm } from './types';
+import { useTranslation } from 'react-i18next';
 
 interface FormState {
   formDetails: FormTypes;
@@ -17,9 +18,10 @@ const INITIAL_STATE = {
 };
 
 const Contacto = () => {
-  const [buttonText, setButtonText] = useState<string>('Enviar');
+  const { t } = useTranslation();
   const [formDetails, setFormDetails] = useState<FormState['formDetails']>(INITIAL_STATE);
   const [status, setStatus] = useState<FormState['status']>();
+  const [buttonText, setButtonText] = useState<string>('Enviar');
 
   const onFormUpdate = (category: string, value: string) => {
     setFormDetails({
@@ -39,7 +41,7 @@ const Contacto = () => {
       body: JSON.stringify(formDetails),
     });
 
-    setButtonText('Enviar');
+    setButtonText(t('contacto.send'));
     let result = await response.json();
 
     setFormDetails(formDetails);
@@ -65,12 +67,12 @@ const Contacto = () => {
           </Col>
           <Col md={6} size={12}>
             <div className='animate__animated animate__slideInUp'>
-              <h2>¡Contactame!</h2>
+              <h2>{t('contacto.title')}</h2>
               <form onSubmit={handleSubmit}>
                 <Row>
                   <Col className='px-1' size={12} sm={6}>
                     <input
-                      placeholder='Nombre'
+                      placeholder={t('contacto.form.name')}
                       type='text'
                       value={formDetails.firstName}
                       onChange={(e) => onFormUpdate('firstName', e.target.value)}
@@ -78,7 +80,7 @@ const Contacto = () => {
                   </Col>
                   <Col className='px-1' size={12} sm={6}>
                     <input
-                      placeholder='Apellido'
+                      placeholder={t('contacto.form.lastName')}
                       type='text'
                       value={formDetails.lastName}
                       onChange={(e) => onFormUpdate('lastName', e.target.value)}
@@ -86,7 +88,7 @@ const Contacto = () => {
                   </Col>
                   <Col className='px-1' size={12} sm={6}>
                     <input
-                      placeholder='Email'
+                      placeholder={t('contacto.form.email')}
                       type='email'
                       value={formDetails.email}
                       onChange={(e) => onFormUpdate('email', e.target.value)}
@@ -94,7 +96,7 @@ const Contacto = () => {
                   </Col>
                   <Col className='px-1' size={12} sm={6}>
                     <input
-                      placeholder='Teléfono'
+                      placeholder={t('contacto.form.phone')}
                       type='tel'
                       value={formDetails.phone}
                       onChange={(e) => onFormUpdate('phone', e.target.value)}
@@ -102,7 +104,7 @@ const Contacto = () => {
                   </Col>
                   <Col className='px-1' size={12}>
                     <textarea
-                      placeholder='Mensaje...'
+                      placeholder={t('contacto.form.message')}
                       rows={6}
                       value={formDetails.message}
                       onChange={(e) => onFormUpdate('message', e.target.value)}

@@ -32,7 +32,6 @@ html {
 }
 
 body {
-  font-weight: 400;
   overflow-x: hidden;
   position: relative;
   background-color: #000 !important;
@@ -163,6 +162,17 @@ span.navbar-text {
   align-items: center;
   justify-content: center;
   line-height: 1;
+}
+
+.languageContainer {
+  max-width: 50px;
+  max-height: 50px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+#spanish {
+  margin-left: 25px;
 }
 
 .social-icon a::before {
@@ -364,7 +374,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   .cvContainer .cvBox::after {
     content: 'PELLO';
     position: absolute;
-    bottom: 150px;
+    bottom: 100px;
     right: 40px;
     font-size: 4em;
     transform: translate3d(0, 0, 60px);
@@ -474,7 +484,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
     align-items: center;
     position: relative;
     text-align: center;
-    margin: 5rem 0 6rem 0 ;
+    margin: 5rem 0 6rem 0;
   }
 
   .cvContainer .cvBox {
@@ -663,11 +673,93 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   margin-bottom: 50px;
 }
 
+/* <-------CERTIFICADOS-------> */
+
+.certifContainer {
+  margin: 10rem 0 10rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #151515;
+}
+
+.certifTitle {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.linkCertif {
+  text-decoration: none;
+}
+
+.cardGiratoria {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  perspective: 1000px;
+  margin-bottom: 3em;
+}
+
+.cardGiratoria-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.cardGiratoria:hover .cardGiratoria-container {
+  transform: rotateY(180deg);
+}
+
+.cardGiratoria-container--frente,
+.cardGiratoria-container--trasera {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 2px solid rgb(45, 186, 172);
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cardGiratoria-container--frente {
+  background-color: #151515;
+}
+
+.cardGiratoria-container--trasera {
+  background-color: #151515;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+.cardGiratoria-container--trasera h3,
+.cardGiratoria-container--trasera p {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cardGiratoria-container--frente h3,
+.cardGiratoria-container--trasera h3 {
+  margin-top: 15px;
+}
+
+.logoCertif {
+  width: 250px;
+  filter: drop-shadow(2px 2px 5px black);
+  opacity: 0.7;
+}
+
 /* <-------CONTACTO------> */
 
 .contact {
   background: linear-gradient(90.21deg, rgba(54, 170, 147, 0.4) -5.91%, rgba(0, 0, 0, 0.5) 111.58%);
   padding: 150px 0 200px 0;
+
 }
 
 .contact img {

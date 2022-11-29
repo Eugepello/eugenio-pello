@@ -1,8 +1,11 @@
 import { Container, Row, Col, Tab } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
 import 'animate.css';
+import { useTranslation } from 'react-i18next';
 
 const Portafolio = () => {
+  const { t } = useTranslation();
+
   const projects = [
     {
       title: 'Despacho de dulces',
@@ -52,7 +55,7 @@ const Portafolio = () => {
         <Row>
           <Col size={12}>
             <div>
-              <h2 id='portfolio'>Portafolio</h2>
+              <h2 id='portfolio'>{t('portfolio.title')}</h2>
               <Tab.Container defaultActiveKey='unique' id='projects-tabs'>
                 <Tab.Content className='animate__animated animate__slideInUp' id='slideInUp'>
                   <Tab.Pane eventKey='unique'>
@@ -66,7 +69,7 @@ const Portafolio = () => {
               </Tab.Container>
             </div>
           </Col>
-          <h5>...para ver más proyectos, ingresá a mi <strong><a href='https://github.com/Eugepello' target='_blank' rel='noopener noreferrer'>perfil de github</a></strong>.</h5>
+          <h5>{t('portfolio.more')}<strong><a href='https://github.com/Eugepello' target='_blank' rel='noopener noreferrer'>github</a></strong>.</h5>
         </Row>
       </Container>
     </section>
