@@ -55,7 +55,7 @@ const Portafolio = () => {
         <Row>
           <Col size={12}>
             <div>
-              <h2 id='portfolio'>{t('portfolio.title')}</h2>
+              <h1 id='portfolio'>{t('portfolio.title')}</h1>
               <Tab.Container defaultActiveKey='unique' id='projects-tabs'>
                 <Tab.Content className='animate__animated animate__slideInUp' id='slideInUp'>
                   <Tab.Pane eventKey='unique'>

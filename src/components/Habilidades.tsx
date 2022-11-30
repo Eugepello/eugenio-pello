@@ -30,7 +30,7 @@ const Habilidades = () => {
         <div className='row'>
           <div className='col-12'>
             <div className='skill-bx wow zoomIn'>
-              <h2>{t('skills.title')}</h2>
+              <h1>{t('skills.title')}</h1>
               <p>{t('skills.subtitle')}</p>
               <Carousel
                 className='owl-carousel owl-theme skill-slider'

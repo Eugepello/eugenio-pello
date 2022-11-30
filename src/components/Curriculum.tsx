@@ -9,7 +9,7 @@ const Curriculum = () => {
 
   return (
     <Container className='cvContainer'>
-      <Tilt className="parallax-effect-img cvBox"
+      <Tilt className='parallax-effect-img cvBox'
         tiltMaxAngleX={25}
         tiltMaxAngleY={25}
         perspective={1500}

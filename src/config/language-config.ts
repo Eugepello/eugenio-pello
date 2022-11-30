@@ -61,7 +61,7 @@ i18next.use(LanguageDetector).use(initReactI18next).init({
           welcome: 'Welcome to my website!',
           title: `I'm Eugenio Pello, `,
           rotation: 'Front end Developer',
-          presentation: `I am 24 years old and started programming almost a year ago. I'm dedicated to develop web applications, mainly through React JS with TypeScript. My daily goal is to continue deepening these technologies to improve the user experience and its interfaces.`
+          presentation: `I am 24 years old and started programming almost a year ago. I'm dedicated to develop web applications, mainly through React JS ⚛️ with TypeScript 🟦. My daily goal is to continue deepening these technologies to improve the user experience and its interfaces.`
         },
         skills: {
           title: 'Technologies',

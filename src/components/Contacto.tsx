@@ -59,15 +59,15 @@ const Contacto = () => {
     <section className='contact' id='contacto'>
       <Container>
         <Row className='align-items-center'>
-          <Col md={6} size={12}>
+          <Col md={4} size={12}>
             <img
               alt='Contactate'
               src='https://res.cloudinary.com/eugepello/image/upload/v1668108479/correo-de-contacto_n1bnea.png'
             />
           </Col>
-          <Col md={6} size={12}>
+          <Col md={8} size={12}>
             <div className='animate__animated animate__slideInUp'>
-              <h2>{t('contacto.title')}</h2>
+              <h1>{t('contacto.title')}</h1>
               <form onSubmit={handleSubmit}>
                 <Row>
                   <Col className='px-1' size={12} sm={6}>
@@ -109,6 +109,7 @@ const Contacto = () => {
                       value={formDetails.message}
                       onChange={(e) => onFormUpdate('message', e.target.value)}
                     />
+                    <br />
                     <button type='submit'>
                       <span>{buttonText}</span>
                     </button>
