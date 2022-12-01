@@ -1,4 +1,5 @@
 import { resources, defaultNS } from "./i18n";
+import 'react-i18next';
 
 export interface FormTypes {
   firstName: string,

@@ -350,6 +350,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 @media (min-width: 991px) {
   .cvContainer {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -360,6 +361,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   }
 
   .cvContainer .cvBox {
+    cursor: pointer;
     width: 40vw;
     height: 50vh;
     padding-top: 30px;
@@ -511,7 +513,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
     position: absolute;
     bottom: 10px;
     left: 50%;
-    color: #151515;
+    color: rgb(115, 60, 197);
     font-weight: 600;
     background-color: #b8b8b8;
     transform: translate3d(-50%, 0, 100px);
