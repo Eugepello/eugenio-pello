@@ -298,7 +298,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('https://res.cloudinary.com/eugepello/image/upload/v1669869954/banner_xagcah.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -693,13 +692,15 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 /* <-------CERTIFICADOS-------> */
 
 .certifContainer {
+  width: 100%;
   margin-top: 5rem;
   padding: 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background: url('https://res.cloudinary.com/eugepello/image/upload/v1669871037/banner2_ue6ff9.jpg');
-  background-size: contain;
+  background-size: 100% auto;
+  background-position: center top;
 }
 
 .certifContainer:before {
