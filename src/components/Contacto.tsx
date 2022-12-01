@@ -72,7 +72,7 @@ const Contacto = () => {
                 <Row>
                   <Col className='px-1' size={12} sm={6}>
                     <input
-                      placeholder={t('contacto.form.name')}
+                      placeholder={t<string>('contacto.form.name')}
                       type='text'
                       value={formDetails.firstName}
                       onChange={(e) => onFormUpdate('firstName', e.target.value)}
@@ -80,7 +80,7 @@ const Contacto = () => {
                   </Col>
                   <Col className='px-1' size={12} sm={6}>
                     <input
-                      placeholder={t('contacto.form.lastName')}
+                      placeholder={t<string>('contacto.form.lastName')}
                       type='text'
                       value={formDetails.lastName}
                       onChange={(e) => onFormUpdate('lastName', e.target.value)}
@@ -88,7 +88,7 @@ const Contacto = () => {
                   </Col>
                   <Col className='px-1' size={12} sm={6}>
                     <input
-                      placeholder={t('contacto.form.email')}
+                      placeholder={t<string>('contacto.form.email')}
                       type='email'
                       value={formDetails.email}
                       onChange={(e) => onFormUpdate('email', e.target.value)}
@@ -96,7 +96,7 @@ const Contacto = () => {
                   </Col>
                   <Col className='px-1' size={12} sm={6}>
                     <input
-                      placeholder={t('contacto.form.phone')}
+                      placeholder={t<string>('contacto.form.phone')}
                       type='tel'
                       value={formDetails.phone}
                       onChange={(e) => onFormUpdate('phone', e.target.value)}
@@ -104,7 +104,7 @@ const Contacto = () => {
                   </Col>
                   <Col className='px-1' size={12}>
                     <textarea
-                      placeholder={t('contacto.form.message')}
+                      placeholder={t<string>('contacto.form.message')}
                       rows={6}
                       value={formDetails.message}
                       onChange={(e) => onFormUpdate('message', e.target.value)}
