@@ -298,6 +298,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
+  background-image: url('https://res.cloudinary.com/eugepello/image/upload/v1669933818/banner_ougzxm.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -349,7 +350,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 @media (min-width: 991px) {
   .cvContainer {
-    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -360,7 +360,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   }
 
   .cvContainer .cvBox {
-    cursor: pointer;
     width: 40vw;
     height: 50vh;
     padding-top: 30px;
@@ -701,16 +700,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   background: url('https://res.cloudinary.com/eugepello/image/upload/v1669871037/banner2_ue6ff9.jpg');
   background-size: 100% auto;
   background-position: center top;
-}
-
-.certifContainer:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .certifTitle {
