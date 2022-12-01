@@ -298,7 +298,21 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background: radial-gradient(circle, rgb(147, 104, 220, 0.3), rgba(0, 0, 0) 100%);
+  background-image: url('https://res.cloudinary.com/eugepello/image/upload/v1669869954/banner_xagcah.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .banner .tagline {
@@ -414,7 +428,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
     position: absolute;
     bottom: 0;
     left: 50%;
-    color: #151515;
+    color: rgb(115, 60, 197);
     font-weight: 600;
     background-color: #b8b8b8;
     transform: translate3d(-50%, 0, 100px);
@@ -682,7 +696,18 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(147, 104, 220, 0.8);
+  background: url('https://res.cloudinary.com/eugepello/image/upload/v1669871037/banner2_ue6ff9.jpg');
+  background-size: contain;
+}
+
+.certifContainer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .certifTitle {
@@ -754,7 +779,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 .logoCertif {
   width: 250px;
-  filter: drop-shadow(2px 2px 5px black);
+  filter: drop-shadow(2px 2px 5px #fff);
   opacity: 0.7;
 }
 
@@ -766,7 +791,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 .contact img {
-  background-color: rgb(147, 104, 220, 0.8);
+  background-color: rgb(112, 73, 151);
   padding: 30px;
   width: 70%;
   margin-bottom: 25px;
