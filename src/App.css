@@ -868,6 +868,15 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   width: 100%;
 }
 
+.contactThanks {
+  background-image: linear-gradient(to left, rgb(147, 104, 220), rgb(192, 70, 240));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 45px;
+}
+
 /* <-------NEWSLETTER------> */
 
 .newsletter-bx {

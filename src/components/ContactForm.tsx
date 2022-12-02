@@ -6,7 +6,7 @@ const ContactForm = () => {
   const { t } = useTranslation();
   const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_ID);
   if (state.succeeded) {
-    return <h4>{t<string>('contacto.thanks')}</h4>;
+    return <h2 className='contactThanks'>{t<string>('contacto.thanks')}</h2>;
   }
   return (
     <form onSubmit={handleSubmit} action={import.meta.env.VITE_FORMSPREE_LINK} method='POST'>
