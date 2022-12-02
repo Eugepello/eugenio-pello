@@ -32,12 +32,13 @@ i18next.use(LanguageDetector).use(initReactI18next).init({
           subtitleCard: 'Diploma online de CoderHouse',
         },
         contacto: {
+          thanks: 'Gracias por contactarme.',
           title: '¡Contactame!',
           form: {
-            name: 'Nombre',
-            lastName: 'Apellido',
-            email: 'Email',
-            phone: 'Teléfono',
+            name: 'Nombre...',
+            lastName: 'Apellido...',
+            email: 'Email...',
+            phone: 'Teléfono...',
             message: 'Mensaje...',
           },
           send: 'Enviar',
@@ -76,12 +77,13 @@ i18next.use(LanguageDetector).use(initReactI18next).init({
           subtitleCard: 'Online diploma from CoderHouse'
         },
         contacto: {
+          thanks: 'Thanks for contacting me!',
           title: 'Contact me!',
           form: {
-            name: 'Name',
-            lastName: 'Last name',
-            email: 'Email',
-            phone: 'Phone',
+            name: 'Name...',
+            lastName: 'Last name...',
+            email: 'Email...',
+            phone: 'Phone...',
             message: 'Message...',
           },
           send: 'Send',

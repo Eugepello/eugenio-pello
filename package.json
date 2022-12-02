@@ -10,6 +10,7 @@
   },
   "homepage": "http://eugeniopello.com/",
   "dependencies": {
+    "@formspree/react": "^2.4.1",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.2",
     "cors": "^2.8.5",

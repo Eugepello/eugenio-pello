@@ -1,19 +1,6 @@
 import { resources, defaultNS } from "./i18n";
 import 'react-i18next';
 
-export interface FormTypes {
-  firstName: string,
-  lastName: string,
-  email: string,
-  phone: string,
-  message: string,
-}
-
-interface StatusForm {
-  success: boolean;
-  message: string;
-}
-
 interface CardTypes {
   title: string,
   description: string,

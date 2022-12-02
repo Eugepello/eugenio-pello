@@ -785,7 +785,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .contact img {
   background-color: rgb(112, 73, 151);
   padding: 30px;
-  width: 70%;
+  width: 300px;
   margin-bottom: 25px;
   border-radius: 25px;
 }
