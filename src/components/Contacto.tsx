@@ -33,7 +33,7 @@ const Contacto = () => {
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     setButtonText('Enviando...');
-    let response = await fetch('https://eugenio-pello.vercel.app/#contacto', {
+    let response = await fetch('https://eugenio-pello.vercel.app/contacto', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',

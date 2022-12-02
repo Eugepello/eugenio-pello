@@ -13,8 +13,8 @@ app.listen(port, () => console.log(`Servidor corriendo en ${port}`));
 const contactEmail = createTransport({
   service: 'gmail',
   auth: {
-    user: 'eugepello@gmail.com',
-    pass: 'dwvlouojllylmykw',
+    user: import.meta.env.VITE_CONTACT_EMAIL,
+    pass: import.meta.env.VITE_CONTACT_PASS,
   },
 });
 
