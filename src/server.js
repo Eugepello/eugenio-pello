@@ -3,11 +3,12 @@ import express, { Router, json } from 'express';
 const app = express();
 import { createTransport } from 'nodemailer';
 const router = Router();
+const port = import.meta.env.VITE_PORT || 5173;
 
 app.use(cors());
 app.use(json());
 app.use('/', router);
-app.listen(5173, () => console.log('Servidor corriendo'));
+app.listen(port, () => console.log(`Servidor corriendo en ${port}`));
 
 const contactEmail = createTransport({
   service: 'gmail',
