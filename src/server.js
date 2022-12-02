@@ -3,12 +3,11 @@ import express, { Router, json } from 'express';
 const app = express();
 import { createTransport } from 'nodemailer';
 const router = Router();
-const port = 8080;
 
 app.use(cors());
 app.use(json());
 app.use('/', router);
-app.listen(port, () => console.log(`Servidor corriendo en ${port}`));
+app.listen(5173, () => console.log(`Servidor corriendo en ${port}`));
 
 const contactEmail = createTransport({
   service: 'gmail',
