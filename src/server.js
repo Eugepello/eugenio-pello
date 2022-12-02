@@ -7,7 +7,7 @@ const router = Router();
 app.use(cors());
 app.use(json());
 app.use('/', router);
-app.listen(5173, () => console.log(`Servidor corriendo en ${port}`));
+app.listen(import.meta.env.PORT, () => console.log(`Servidor corriendo en ${port}`));
 
 const contactEmail = createTransport({
   service: 'gmail',
