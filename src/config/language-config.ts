@@ -16,7 +16,7 @@ i18next.use(LanguageDetector).use(initReactI18next).init({
         banner: {
           welcome: '¡Bienvenida/o a mi Website!',
           title: 'Soy Eugenio Pello, ',
-          rotation: 'Desarrollador Web Front end',
+          rotation: `Desarrollador Web Front end`,
           presentation: 'Tengo 24 años y me dedico a la programación desde hace casi un (1) año. Actualmente me dedico a desarrollar aplicaciones web, principalmente, a través de React JS ⚛️ con TypeScript 🟦. Mi objetivo a diario es seguir profundizando estas tecnologías para mejorar la experiencia del usuario y sus interfaces.'
         },
         skills: {
@@ -45,9 +45,9 @@ i18next.use(LanguageDetector).use(initReactI18next).init({
         },
         cv: 'Descargar CV',
         newsletter: {
-          title: 'Suscribite a mi Newsletter para no perderte las últimas novedades.'
+          title: 'Suscribite a mi Newsletter.'
         },
-        footer: `Desarrollado por Eugenio Pello. Todos los derechos reservados.`,
+        footer: 'Desarrollado por Eugenio Pello. Todos los derechos reservados.',
       }
     },
     en: {
@@ -90,9 +90,9 @@ i18next.use(LanguageDetector).use(initReactI18next).init({
         },
         cv: 'Download CV',
         newsletter: {
-          title: `Subscribe to my Newsletter to not miss the latest news.`,
+          title: 'Subscribe to my Newsletter.',
         },
-        footer: `Developed by Eugenio Pello. All rights reserved.`,
+        footer: 'Developed by Eugenio Pello. All rights reserved.',
       }
     }
   }

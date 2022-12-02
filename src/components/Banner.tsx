@@ -55,7 +55,7 @@ const Banner = () => {
     <section className='banner' id='home'>
       <Container>
         <Row className='aligh-items-center'>
-          <Col xs={12} md={12} xl={6}>
+          <Col xs={11} md={11} xl={6}>
             <div className='animate__animated animate__fadeIn'>
               <span className='tagline'>{t('banner.welcome')}</span>
               <h1>

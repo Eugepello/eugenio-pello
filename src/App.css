@@ -327,7 +327,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 .banner h1 {
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 20px;
@@ -691,7 +691,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 /* <-------CERTIFICADOS-------> */
 
 .certifContainer {
-  width: 100%;
   margin-top: 5rem;
   padding: 5rem 0;
   display: flex;
@@ -716,8 +715,8 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 .cardGiratoria {
   background-color: transparent;
-  width: 400px;
-  height: 300px;
+  width: 350px;
+  height: 270px;
   perspective: 1000px;
   margin-bottom: 3em;
 }
