@@ -3,7 +3,7 @@ import express, { Router, json } from 'express';
 const app = express();
 import { createTransport } from 'nodemailer';
 const router = Router();
-const port = 5173;
+const port = 8080;
 
 app.use(cors());
 app.use(json());
