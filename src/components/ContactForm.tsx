@@ -81,7 +81,7 @@ const ContactForm = () => {
             errors={state.errors}
           />
           <br />
-          <button type="submit" disabled={state.submitting}>
+          <button className='enviarSend' type="submit" disabled={state.submitting}>
             {t<string>('contacto.send')}
           </button>
         </Col>

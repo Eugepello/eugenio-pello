@@ -830,7 +830,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   opacity: 0.8;
 }
 
-.contact form button {
+.enviarSend {
   font-weight: 700;
   color: #000;
   background-color: #fff;
@@ -840,20 +840,18 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
-}
-
-.contact form button span {
   z-index: 1;
   position: relative;
 }
 
-.contact form button:hover {
+.enviarSend:hover {
   color: #fff;
 }
 
-.contact form button::before {
+.enviarSend::before {
   content: '';
   background: #000;
+  color: #fff;
   width: 0;
   height: 100%;
   position: absolute;
@@ -863,7 +861,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 
-.contact form button:hover::before {
+.enviarSend:hover::before {
   width: 100%;
 }
 
