@@ -15,7 +15,6 @@ const Curriculum = () => {
         perspective={1500}
         transitionSpeed={10000}
         scale={1.1}
-        gyroscope={true}
       >
         <h2 className='cvName'>Curriculum Vitae</h2>
         <a href={pdf} target='_blank' rel='noopener noreferrer' download='Eugenio Pello CV.pdf' className='download'>{t('cv')}</a>
