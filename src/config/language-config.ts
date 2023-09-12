@@ -17,7 +17,7 @@ i18next.use(LanguageDetector).use(initReactI18next).init({
           welcome: '¡Bienvenida/o a mi Website!',
           title: 'Soy Eugenio Pello, ',
           rotation: `Desarrollador Web Front end`,
-          presentation: 'Tengo 24 años y me lancé a la programación hace un (1) año. Actualmente me dedico a desarrollar aplicaciones web, principalmente, a través de React JS ⚛️ con TypeScript 🟦 y Next.js. Mi objetivo a diario es seguir profundizando estas tecnologías para mejorar la experiencia del usuario y sus interfaces.'
+          presentation: 'Tengo 24 años y me lancé a la programación hace 5 años. Actualmente me dedico a desarrollar aplicaciones web, principalmente, a través de React JS ⚛️ con TypeScript 🟦 y Next.js. Mi objetivo a diario es seguir profundizando estas tecnologías para mejorar la experiencia del usuario y sus interfaces.'
         },
         skills: {
           title: 'Tecnologías',
@@ -62,7 +62,7 @@ i18next.use(LanguageDetector).use(initReactI18next).init({
           welcome: 'Welcome to my website!',
           title: `I'm Eugenio Pello, `,
           rotation: 'Front end Developer',
-          presentation: `I am 24 years old and started programming a year ago. I'm dedicated to develop web applications, mainly through React JS ⚛️ with TypeScript 🟦 and Next.js. My daily goal is to continue deepening these technologies to improve the user experience and its interfaces.`
+          presentation: `I am 24 years old and started programming 5 years ago. I'm dedicated to develop web applications, mainly through React JS ⚛️ with TypeScript 🟦 and Next.js. My daily goal is to continue deepening these technologies to improve the user experience and its interfaces.`
         },
         skills: {
           title: 'Technologies',
